@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    
+    <!-- Error/Warning messages -->
+    <string name="no_match_uri">No match found for uri %s</string>
+    <string name="quantity_lower_than_zero">Quantity cannot be less than 0!</string>
+    <string name="save_ok">Product saved</string>
+    <string name="save_error">An error has occurred trying to save product</string>
+    <string name="delete_ok">Product deleted</string>
+    <string name="delete_error">An error has occurred trying to delete product</string>
+    
+    <!-- Titles -->
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="order_from_supplier">Order from supplier</string>
+    
+    <!-- Product Labels -->
+    <string name="product_name">Name</string>
+    <string name="product_price">Price</string>
+    <string name="product_quantity">Quantity</string>
+    <string name="product_description">Description</string>
+    <string name="currency">$</string>
+    
+    <!-- Dialog -->
+    <string name="unsaved_changes">Discard changes?</string>
+    <string name="delete_product">Delete product?</string>
+</resources>

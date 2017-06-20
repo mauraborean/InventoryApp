@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ProductActivity">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+        
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_shopping_basket_black_36dp"
+            />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+            
+            <LinearLayout
+                android:id="@+id/product_name_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:text="@string/product_name"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+                
+                <EditText
+                    android:id="@+id/name_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    tools:text="product's name"/>
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/product_price_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/product_price"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+                    
+                    <EditText
+                        android:id="@+id/price_edit_text"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="numberDecimal"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        tools:text="19.00"/>
+                    
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:text="@string/currency"
+                        android:textAppearance="?android:textAppearanceMedium"/>
+                </LinearLayout>
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/product_quantity_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:text="@string/product_quantity"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+                
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+                    
+                    <LinearLayout
+                        android:id="@+id/quantity_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        
+                        <ImageView
+                            android:id="@+id/decrement_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="16dp"
+                            android:src="@drawable/ic_remove_circle_outline_black_24dp"/>
+                        
+                        <TextView
+                            android:id="@+id/quantity_text_view"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAppearance="?android:textAppearanceSmall"
+                            tools:text="5"/>
+                        
+                        <ImageView
+                            android:id="@+id/increment_quantity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="16dp"
+                            android:src="@drawable/ic_add_circle_outline_black_24dp"/>
+                    </LinearLayout>
+                    
+                    <EditText
+                        android:id="@+id/quantity_edit_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        tools:text="5"/>
+                
+                </LinearLayout>
+            
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/product_desc_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_weight="1"
+                    android:text="@string/product_description"
+                    android:textAppearance="?android:textAppearanceMedium"/>
+                
+                <EditText
+                    android:id="@+id/desc_edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:textAppearance="?android:textAppearanceSmall"
+                    tools:text="bla "/>
+            
+            </LinearLayout>
+        
+        </LinearLayout>
+    
+    </LinearLayout>
+    
+    
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_new_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="24dp"
+        android:src="@drawable/ic_add_a_photo_white_24dp"/>
+</RelativeLayout>
